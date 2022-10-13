@@ -3,7 +3,11 @@ html, body{
     padding: 0;
 }
 #header{
-    background-color: aqua;
+    background-image: url('img/149452.png');
+    background-color:	#FFD700;
     color: white;
     padding: 10px;
+}
+#user_state{
+    color: green;
 }
