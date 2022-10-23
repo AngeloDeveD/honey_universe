@@ -27,5 +27,8 @@ html, body {
     top: 50%;
     text-align: center;
     transform:translate(-50%, -50%);
-    
+    border: 6px solid #29c6ff38;
+    border-radius: 34px;
+    background-color: #ffffff1a;
+    font-family: Trebuchet MS, sans-serif;
 }
