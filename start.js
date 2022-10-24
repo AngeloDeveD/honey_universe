@@ -1,3 +1,8 @@
+//npm install express --save
+//Windows: npm i nodemon
+//Ubuntu: sudo npm install -g --force nodemon
+//Запуск: nodemon start.js
+
 const path = require('path');
 const express = require('express');
 const app = express();
