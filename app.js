@@ -10,14 +10,27 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 //Функция по созданию кнопки для вхождения в соц сеть
 function magicbutton(){
-    var btn = document.createElement("button");
-    btn.id = "magic_button";
-    //Создаётся текст кнопки
-    btn.append(document.createTextNode("Войти"));
-    var act = document.createElement("form");
-    act.action = "/message";
-    act.appendChild(btn);
-    document.getElementById('magic').appendChild(act);
+    //Кнопка входа
+    var btn_sign = document.createElement("button");
+    btn_sign.append(document.createTextNode("Войти"));
+
+    var act_sing = document.createElement("form");
+    act_sing.action = "/message";
+    act_sing.className = "sign_log_in"
+    act_sing.id = "signin"
+    act_sing.appendChild(btn_sign);
+    document.getElementById('magic').appendChild(act_sing);
+
+    //Кнопка регистрации
+    var btn_log = document.createElement("button");
+    btn_log.append(document.createTextNode("Зарегистрироваться"));
+
+    var act_log = document.createElement("form");
+    act_log.action = "/registration";
+    act_log.appendChild(btn_log);
+    act_log.className = "sign_log_in"
+    act_log.id = "login";
+    document.getElementById('magic').appendChild(act_log);
 }
 
 //Функция для выдачи рандомных чисел
@@ -28,7 +41,7 @@ function getRandomInt(max) {
 //Функция для выдачи рандомных приветствий
 function hello(){
     var main_text = document.createElement("h1");
-    var greetings = ["Здравствуйте", "Добрый день", "Рады вас видеть!", "Добро пожаловать!", "Отлично сегодня выглядите :)", "Спасибо, что зашли!", "Мы любим вас! 🖤"];
+    var greetings = ["Здравствуйте", "Добрый день", "Рады вас видеть!", "Добро пожаловать!", "Отлично выглядите :)", "Спасибо, что зашли!", "Мы любим вас! 🖤"];
     main_text.textContent = greetings[getRandomInt(greetings.length)];
     document.getElementById("hi").appendChild(main_text);
 }
