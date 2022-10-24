@@ -56,7 +56,9 @@ button{
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.44);
   color: rgb(0, 0, 0);
   font-size: 26px;
+  min-width: 10px;
   width: -moz-available;
+  width: -webkit-available; 
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
@@ -64,9 +66,10 @@ button{
 #place{
   left: 50%;
   position: fixed;
-  top: 30%;
+  top: 15%;
   transform:translate(-50%, -50%);
 }
+
 
 #signin{
   float: left;
@@ -79,6 +82,60 @@ button{
   min-width: 57%;
   max-width: 70%;
 }
+/* 
+@media (min-height: 200px) and (max-height: 600px){
+  button{
+    font-size: 15px;
+  }
+
+  .hello{
+    font-size: 100%;
+  }
+
+  #signin{
+    min-width: 10px;
+    max-width: 110px;
+  }
+
+  #login{
+    float:right;
+    min-width: 60px;
+    max-width: 200px;
+  }
+
+  #place{
+    left: 50%;
+    position: fixed;
+    top: 10%;
+    transform:translate(-50%, -50%);
+  }
+} */
+
+
+
+@media (min-width: 200px) and (max-width: 700px){
+  button{
+    font-size: 10px;
+  }
+
+  .hello{
+    font-size: 125%;
+  }
+
+  #signin{
+    min-width: 6px;
+    max-width: 110px;
+  }
+
+  #place{
+    left: 50%;
+    position: fixed;
+    top: 15%;
+    transform:translate(-50%, -50%);
+  }
+}
+
+
 
 button:hover{
   border-radius: 17px;
