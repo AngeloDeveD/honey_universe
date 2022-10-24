@@ -20,4 +20,7 @@ html, body{
 .user_info{
     display: inline-block;
     padding-inline-start: 19px;
+    position: fixed;
+    text-align: left;
+    padding-top: 21px;
 }

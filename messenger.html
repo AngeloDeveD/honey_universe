@@ -4,21 +4,21 @@
         <meta charset="UTF-8">
         <title>Honeyverse: главная страница</title>
         <link rel="stylesheet" href="teststyle.css" type="text/css"> 
-        <link rel="icon" href="images/web_icon.png">
+        <link rel="icon" href="images/icons/web_icon.png">
     </head>
     <body>
         <noscript>
-            <!--Сюда нужно добавить noscript страницу. Как это сделать?) - сделаем через node.js-->
+            <meta http-equiv=refresh content='0; url=http://localhost:8082/nonejs'>
         </noscript>
         <div class="upper">
-            <img src="images/user_icon.png" id="user_icon">
+            <img src="images/icons/user_icon.png" id="user_icon">
             <div class="user_info">
                 <div id="user_name">Имя пользователя</div>
-                <div id="user_state">В сети</div>
+                <div id="user_state">🟢 В сети</div>
             </div>
         </div>
         <div class="list">
             <div></div>
-        <script src="testscript.js"></script>
+        <script src="scripts/testscript.js"></script>
     </body>
 </html>
