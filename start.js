@@ -17,7 +17,7 @@ app.get('/nonejs', (req, res) => {
     res.sendFile(`${__dirname}/noscript.html`);
 });
 
-app.get('/', (req, res) => {
+app.get('/', (req, res) => {w
     res.sendFile(`${__dirname}/index.html`);
 });
 

@@ -5,6 +5,7 @@ html, body{
   padding: 0;
   border: 0;
   outline: 0;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 body{
@@ -38,7 +39,6 @@ body{
   top: 50%; */
   text-align: center;
   /* transform:translate(-50%, -50%); */
-  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
   font-size: 200%;
   display: block;
 }
@@ -51,17 +51,22 @@ body{
 }
 
 #magic_button{
-  animation: ani 5s forwards;
-  width: -moz-available;
+  animation: ani 3s forwards;
+  min-width: -moz-available;
+  max-width: 70%;
+  width: max-content;
   min-height: 45px;
   border: 4px solid #23a6d5;
   border-radius: 49px;
   box-shadow: 5px 3px 3px 1px rgba(0, 0, 255, .2);
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+  text-shadow: 2.4px 1.5px rgba(0, 0, 0, 0.185);
 }
 
 #place{
   left: 50%;
   position: fixed;
-  top: 40%;
+  top: 30%;
   transform:translate(-50%, -50%);
 }
