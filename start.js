@@ -18,7 +18,7 @@ app.get('/nonejs', (req, res) => {
 });
 
 app.get('/registration', (req, res) => {
-    res.sendFile(`${__dirname}/registrator.html`);
+    res.sendFile(`${__dirname}/registration_page.html`);
 });
 
 
