@@ -2,20 +2,26 @@
 <html>
     <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="registration_style.css" type="text/css">
     </head>
     <body>
-        <div id="central-block">
-        <div id="header">Регистрация</div>
-        <form>
-        <div class="input"><input type="text" placeholder="Имя пользователя" name="user_name" maxlength="50">
-        <input type="email" placeholder="Адрес электроной почты" name="user_email">
-        <input type="password" placeholder="Пороль" name="user_pasword">
-        <input type="password" placeholder="Подтвердите пороль" name="user_pasword_chek">
-        <input type="button" value="Зарегестрироваться" name="send" >
-        </div>
-        
-        </form>
+        <div id="patern">
+            <div id="central-block">
+            <div id="header"><h1>Регистрация</h1></div>
+            <form>
+                <p>Имя пользователя</p>
+                <input class="input" type="text" name="user_name" maxlength="50">
+                <p>Email</p>
+                <input class="input" type="email" name="user_email">
+                <p>Пороль</p>
+                <input class="input" type="password" name="user_pasword">
+                <p>Подтвердите пороль</p>
+                <input class="input" type="password" name="user_pasword_chek">
+                <input  id="button" type="button" value="Зарегестрироваться" name="send" id="button">
+            </form>
+            </div>
         </div>
     </body>
-</html>
+</html> 
