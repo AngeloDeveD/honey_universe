@@ -5,7 +5,7 @@ html, body{
   padding: 0;
   border: 0;
   outline: 0;
-  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  font-family: Trebuchet MS, sans-serif;
 }
 
 body{
@@ -35,7 +35,7 @@ body{
 .hello {
   animation: ani 3s forwards;
   text-align: center;
-  font-size: 200%;
+  font-size: 150%;
   display: block;
 }
 
@@ -45,8 +45,10 @@ body{
 }
 
 .sign_log_in{
-  display: table-cell;
+  display: block;
+  /* display: table-cell; */
   animation: ani 3s forwards;
+  position: revert-layer;
 }
 
 button{
@@ -55,10 +57,10 @@ button{
   border-radius: 14px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.44);
   color: rgb(0, 0, 0);
-  font-size: 26px;
+  font-size: 22px;
   min-width: 10px;
   width: -moz-available;
-  width: -webkit-available; 
+  width: -webkit-fill-available; 
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
@@ -74,13 +76,13 @@ button{
 #signin{
   float: left;
   min-width: 25%;
-  max-width: 40%;
+  max-width: 200%;
 }
 
 #login{
   float:right;
   min-width: 57%;
-  max-width: 70%;
+  max-width: 200%;
 }
 /* 
 @media (min-height: 200px) and (max-height: 600px){
