@@ -1,5 +1,6 @@
 //После того как страница полностью прогрузится
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", function(){
+    "use strict";
     console.log("Страница успешно запущена)");
     //Выдаёт рандомное приветсвие пользователю
     hello();
