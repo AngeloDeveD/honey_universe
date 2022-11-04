@@ -66,4 +66,23 @@ body{
     0% {opacity: 0;}
     100% {opacity: 1;}
   }
+  .warn {
+    background: #fc0;
+    padding: 10px;
+   }
+   .textani{
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+   }
+   @keyframes fadeInLeft {
+    from {
+     opacity: 0;
+     transform: translateX(-2000px);
+    }
+    to {
+     opacity: 1;
+     transform: none;
+    }
+   }
+
 
