@@ -13,14 +13,13 @@ app.get('/', (req, res) => {w
     res.sendFile(`${__dirname}/index.html`);
 });
 
-app.get('/nonejs', (req, res) => {
+app.get('/noscript', (req, res) => {
     res.sendFile(`${__dirname}/noscript.html`);
 });
 
 app.get('/registration', (req, res) => {
-    res.sendFile(`${__dirname}/registration_page.html`);
+    res.sendFile(`${__dirname}/Registrahion/registration_page.html`);
 });
-
 
 app.get('/message', (req, res) => {
     res.sendFile(`${__dirname}/messenger.html`);
