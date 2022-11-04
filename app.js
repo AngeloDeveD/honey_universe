@@ -21,8 +21,8 @@ function magicbutton(){
 
     var act_sing = document.createElement("form");
     act_sing.action = "/message";
-    act_sing.className = "sign_log_in"
-    act_sing.id = "signin"
+    act_sing.className = "sign_log_in";
+    act_sing.id = "signin";
     act_sing.appendChild(btn_sign);
     document.getElementById('magic').appendChild(act_sing);
 
@@ -33,7 +33,7 @@ function magicbutton(){
     var act_log = document.createElement("form");
     act_log.action = "/registration";
     act_log.appendChild(btn_log);
-    act_log.className = "sign_log_in"
+    act_log.className = "sign_log_in";
     act_log.id = "login";
     document.getElementById('magic').appendChild(act_log);
 }
@@ -65,7 +65,7 @@ function ThisDay(){
     let date = new Date();
     let day = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
     let hours = `${date.getHours()}:${date.getMinutes()}`;
-    let year = `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`
+    let year = `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`;
     return `Дата: ${year}, \nДень: ${day[date.getDay()]},\nЧасы: ${hours}`;
 }
 
