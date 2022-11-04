@@ -8,12 +8,13 @@ html, body{
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 #central-block{
+    left: 1000px;
+    position: fixed;
+    top: 539px;
+    transform:translate(-50%, -50%);
     display: inline-block;
     width: 250px;
     height: 430px;
-    position: relative;
-    top: 40%;
-    left: 48%;
     margin: -125px 0 0 -125px;
     border: solid;
     border-radius:20px;
