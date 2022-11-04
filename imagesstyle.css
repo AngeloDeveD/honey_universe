@@ -1,0 +1,10 @@
+#images{
+    width: 3%;
+    border-radius: 73px;
+    border: 2.3px solid #00000017;
+    transition: all 0.5s ease;
+}
+
+#images:hover{
+    border-radius: 10px;
+}
