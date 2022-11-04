@@ -18,6 +18,7 @@ app.get('/noscript', (req, res) => {
 });
 
 app.get('/registration', (req, res) => {
+    app.use(express.static(path.join(__dirname + "/Registrahion")));
     res.sendFile(`${__dirname}/Registrahion/registration_page.html`);
 });
 
@@ -25,6 +26,6 @@ app.get('/message', (req, res) => {
     res.sendFile(`${__dirname}/messenger.html`);
 });
 
-app.listen(8082, () => {
+app.listen(8082, function(){
     console.log('Application listening on port 8082');
 });
