@@ -7,6 +7,7 @@ html, body{
     outline: 0;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
+
 #central-block{
     left: 1000px;
     position: fixed;
@@ -22,13 +23,14 @@ html, body{
     padding:50px;
     background: linear-gradient(-45deg, #fff,#23a6d5,rgb(255, 155, 242), rgb(179, 255, 195), #ddff8d, #ffd885, #ff7878);
     background-size: 400% 400%;
-    animation: gradient 0s ease infinite;
 
 }
+
 .input{
     margin: 3px;
     text-align:center;
 }
+
 #patern{
     display: inline-block;
     vertical-align: middle;
@@ -40,6 +42,7 @@ html, body{
     left: 0;
     overflow: auto;
 }
+
 #button{
     background-color: #fadd8600;
     border: 4px solid #fff1c500;
@@ -47,14 +50,15 @@ html, body{
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.44);
     color: rgb(0, 0, 0);
     font-size: 20px;
-
-
+    margin-top: 25px;
 }
+
 body{
     background: linear-gradient(-45deg, #fff,rgb(255, 155, 242),#23a6d5, rgb(179, 255, 195), #ddff8d, #ffd885, #ff7878);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
 }
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -67,27 +71,27 @@ body{
     }
   }
   
-  @keyframes ani {
+@keyframes ani {
     0% {opacity: 0;}
     100% {opacity: 1;}
-  }
-  .warn {
+}
+.warn {
     background: #fc0;
     padding: 10px;
-   }
-   .textani{
+}
+.textani{
     animation-name: fadeInLeft;
     animation-duration: 1s;
-   }
-   @keyframes fadeInLeft {
+}
+@keyframes fadeInLeft {
     from {
      opacity: 0;
      transform: translateX(-2000px);
     }
-    to {
+to {
      opacity: 1;
      transform: none;
     }
-   }
+}
 
 
