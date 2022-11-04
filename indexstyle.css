@@ -1,0 +1,246 @@
+html, body{
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: Trebuchet MS, sans-serif;
+}
+
+body{
+  background: linear-gradient(-45deg, #fff,rgb(255, 155, 242),#23a6d5, rgb(179, 255, 195), #ddff8d, #ffd885, #ff7878);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.hello {
+  animation: ani 3s forwards;
+  text-align: center;
+  font-size: 142%;
+  display: block;
+}
+
+#magic{
+  display: flow-root;
+  margin-bottom: -1000px;
+  margin-top: 60px;
+}
+
+.sign_log_in{
+  display: block;
+  /* display: table-cell; */
+  animation: ani 3s forwards;
+  position: revert-layer;
+}
+
+button{
+  background-color: #fadd8600;
+  border: 2.3px solid #00000017;
+  border-radius: 8px;
+  /* box-shadow: 0px 0px 1.5px 0px rgba(0, 0, 0, 0.44); */
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  min-width: 10px;
+  width: -moz-available;
+  width: -webkit-fill-available; 
+  min-height: 50px;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+#place{
+  left: 50%;
+  position: fixed;
+  top: 15%;
+  transform:translate(-50%, -50%);
+}
+
+
+#signin{
+  float: left;
+  min-width: 25%;
+  max-width: 200%;
+  margin-left: -4%;
+}
+
+#login{
+  float:right;
+  min-width: 57%;
+  max-width: 200%;
+  margin-right: -4%;
+}
+
+
+/*Горизонтально*/
+@media (min-height: 0) and (max-height: 400px){
+
+  #magic{
+    margin-top: 35px;
+  }
+
+  button{
+    font-size: 18px;
+  }
+
+  .hello{
+    font-size: 70%;
+  }
+
+  #signin{
+    min-width: 10px;
+    max-width: 110px;
+  }
+
+  #login{
+    float:right;
+    min-width: 60px;
+    max-width: 200px;
+  }
+
+  #place{
+    left: 50%;
+    position: fixed;
+    top: 6%;
+    transform:translate(-50%, -50%);
+  }
+}
+
+
+@media (min-height: 1800) and (max-height: 2200){
+  .hello{
+    font-size: 180%;
+  }
+
+  button{
+    min-height: 70px;
+  }
+
+  button:hover{
+    margin-right: 6px;
+    margin-top: -6px;
+    box-shadow: 5px 6px 2px 3px rgba(0, 0, 2, 0.35);
+  }
+}
+
+/*Вертикально*/
+
+@media (min-width: 1600px) and (max-width: 2000px){
+  #place{
+    top:25%;
+  }
+
+  .hello{
+    font-size: 170%;
+  }
+
+  button{
+    min-height: 70px;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 879px){
+
+  #place{
+    top:6%;
+  }
+
+  button{
+    font-size: 13px;
+    min-height: 30px;
+  }
+
+  .hello{
+    font-size: 100%;
+  }
+
+  #signin{
+    min-width: 10px;
+    max-width: 110px;
+  }
+
+  #login{
+    min-width: 60px;
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 289px) and (max-width: 689px){
+  #place{
+    top:5%;
+  }
+  .hello{
+    font-size: 55%;
+  }
+
+  button{
+    font-size: 10px;
+    min-height: 25px;
+  }
+
+  #signin{
+    min-width: 10px;
+    max-width: 110px;
+  }
+
+  #login{
+    min-width: 60px;
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 150px) and (max-width: 288px){
+
+  #place{
+    top:5%;
+  }
+
+  .hello{
+    font-size: 45%;
+  }
+
+  button {
+    font-size: 5px;
+    min-height: 18px;
+  }
+  #signin{
+    min-width: 10px;
+    max-width: 110px;
+  }
+
+  #login{
+    min-width: 60px;
+    max-width: 200px;
+  }
+}
+
+
+button:hover{
+  margin-right: 4px;
+  margin-top: -4px;
+  border-radius: 8px;
+  border: 2px solid #00000008;
+  background: #fadd8600;
+  box-shadow: 4px 5px 2px 2px rgba(0, 0, 2, 0.35);
+  text-transform: full-width;
+}
