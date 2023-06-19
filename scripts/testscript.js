@@ -5,4 +5,3 @@ addEventListener("DOMContentLoaded", ()=>{
 function user_page(){
     window.location.href = "/"
 }
-//test
